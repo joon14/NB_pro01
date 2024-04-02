@@ -1,14 +1,18 @@
 # 프로젝트 개발 보고서(Project Development Report)
 ------------------------------------------------------
 ## 1. 프로젝트 개요(Project Outline)
-    프로젝트 개요 내용 작성
+    다양한 시설기관 및 교통시설이 조성되어 있는 답십리동을 소개하기 위한 웹 애플리케이션을 자바 기반의 웹 애플리케이션으로 개발하게 되었다.
+
+    A Java-based web application was developed to introduce Dapsimni-dong, where various facilities and transportation facilities are located.
 
 
 <br><br><br>
 
 
 ## 2. 프로젝트 목적(Project Purpose)
-    프로젝트 목적 내용 작성
+    답십리동의 유래와 연혁, 곳곳에 위치한 시설기관, 맛집, 카페 등을 소개하고, 답십리동의 소식을 전달하며 커뮤니티를 이루고 정보를 공유할 목적으로 개발하게 되었다.
+
+    It was developed for the purpose of introducing the origin and history of Dapsimni-dong, facilities, restaurants, and cafes located here and there, conveying news of Dapsimni-dong, and forming a community and sharing information.
 
 
 <br><br><br>
