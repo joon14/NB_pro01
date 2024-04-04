@@ -19,14 +19,19 @@ public class Main extends HttpServlet {
     }
     
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String name = "돌아온 포켓몬 김기태 강사님";
+		String name = "피카츄";
+		String teacher = "김기태 강사님";
+		String student = "정도준";
 		
 		ServletContext application = request.getServletContext();
 		String realPath = request.getSession().getServletContext().getRealPath("/");
 		
 		application.setAttribute("realPath", realPath);
+		application.setAttribute("title", "답십리동 소개");
 		
 		request.setAttribute("name", name);
+		request.setAttribute("teacher", teacher);
+		request.setAttribute("student", student);
 		
 		request.setAttribute("exo1", "./images/exo1.jpg");
 		

@@ -1,0 +1,38 @@
+package org.dapsimni.dao;
+
+import java.sql.*;
+import java.util.*;
+
+import org.dapsimni.dto.Notice;
+
+public class NoticeDAO {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	public List<Notice> getNoticeList() {
+		List<Notice> noticeList = new ArrayList<>();
+		
+		MySQLDB mysql = new MySQLDB();
+		
+		try {
+			con = mysql.Connect();
+			pstmt = con.prepareStatement(SqlLang.SELECT_ALL_NOTICE);
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				Notice notice = new Notice(rs.getInt("no"),
+						rs.getString("title"),
+						rs.getString("content"),
+						rs.getString("resdate"),
+						rs.getInt("visited"));
+				noticeList.add(notice);
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			mysql.close(con, pstmt, rs);
+		}
+		return noticeList;
+	}
+}
