@@ -12,7 +12,7 @@
 <style>
 	.container { width:1400px }
 	.page { clear:both; height:100vh }
-	#page1 { background-color:#95f5ba }
+	#page1 { background-color:#defcd2 }
 	#page2 { background-color:#5d97f5 }
 	#page3 { background-color:#f5f295 }
 	#page4 { background-color:#f5c573 }
@@ -31,12 +31,12 @@
 		<div style="width:1400px; margin:0 auto;">
 			<h3 class="page_title">공지사항 목록</h3>
 			<div>
-				<table class="table tabel-dark">
-					<thead>
+				<table class="table table-striped">
+					<thead class="thead-light">
 						<tr>
 							<th class="item1">번호</th>
 							<th class="item2">제목</th>
-							<th class="item3">작성 날짜</th>
+							<th class="item3">작성 일시</th>
 							<th class="item4">조회 수</th>
 						</tr>
 					</thead>
@@ -45,7 +45,7 @@
 							<c:forEach var="dto" items="${noticeList }">
 							<tr>
 								<td>${dto.no }</td>
-								<td>${dto.title }</td>
+								<td><a href="${path0 }/GetNotice.do?no=${dto.no }">${dto.title }</a></td>
 								<td>${dto.resdate }</td>
 								<td>${dto.visited }</td>
 							</tr>

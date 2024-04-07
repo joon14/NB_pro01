@@ -12,7 +12,7 @@
 <style>
 	.container { width:1400px }
 	.page { clear:both; height:100vh }
-	#page1 { background-color:#95f5ba }
+	#page1 { background-color:#defcd2 }
 	#page2 { background-color:#5d97f5 }
 	#page3 { background-color:#f5f295 }
 	#page4 { background-color:#f5c573 }
@@ -27,8 +27,8 @@
 	<section class="page" id="page1">
 		<div style="width:1400px; margin:0 auto;">
 			<h3 class="page_title">공지사항 글 등록</h3>
-			<form action="${path0 }/NotiIns.do" method="post">
-				<table class="table tabel-dark">
+			<form action="${path0 }/InsNotice.do" method="post">
+				<table class="table table-striped">
 					<tbody>
 						<tr>
 							<th><label for="title">제목</label></th>
@@ -36,20 +36,18 @@
 								<input type="text" name="title" id="title" class="form-control" maxlength="100" required>
 							</td>
 						</tr>
-							
-						
 						<tr>
 							<th><label for="content">내용</label></th>
 							<td>
 								<textarea name="content" id="content" rows="8" cols="80" class="form-control"></textarea>
 							</td>
 						</tr>
-						
 					</tbody>
 				</table>
 				<hr>
 				<div class="btn-group">
 					<button type="submit" class="btn btn-secondary">글 등록</button>
+					<a href="${path0 }/NoticeList.do" class="btn btn-secondary">글 목록</a>
 				</div>
 			</form>
 		</div>

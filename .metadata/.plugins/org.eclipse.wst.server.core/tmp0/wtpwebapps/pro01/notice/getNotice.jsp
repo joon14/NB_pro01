@@ -12,7 +12,7 @@
 <style>
 	.container { width:1400px }
 	.page { clear:both; height:100vh }
-	#page1 { background-color:#95f5ba }
+	#page1 { background-color:#defcd2 }
 	#page2 { background-color:#5d97f5 }
 	#page3 { background-color:#f5f295 }
 	#page4 { background-color:#f5c573 }
@@ -31,36 +31,37 @@
 		<div style="width:1400px; margin:0 auto;">
 			<h3 class="page_title">공지사항 상세보기</h3>
 			<div>
-				<table class="table tabel-dark">
-					<thead>
-						<tr>
-							<th class="item1">번호</th>
-							<th class="item2">제목</th>
-							<th class="item3">작성 날짜</th>
-							<th class="item4">조회 수</th>
-						</tr>
-					</thead>
+				<table class="table table-striped">
 					<tbody>
-						<c:if test="${not empty noticeList }">
-							<c:forEach var="dto" items="${noticeList }">
-							<tr>
-								<td>${dto.no }</td>
-								<td>${dto.title }</td>
-								<td>${dto.resdate }</td>
-								<td>${dto.visited }</td>
-							</tr>
-							</c:forEach>
-						</c:if>
-						<c:if test="${empty noticeList }">
-							<tr>
-								<td colspan="4"><strong>공지사항이 존재하지 않습니다.</strong></td>
-							</tr>
-						</c:if>
+						<tr>
+							<th>번호</th>
+							<td>${notice.no }</td>
+						</tr>
+						<tr>
+							<th>제목</th>
+							<td>${notice.title }</td>
+						</tr>
+						<tr>
+							<th>내용</th>
+							<td>${notice.content }</td>
+						</tr>
+						<tr>
+							<th>작성 일시</th>
+							<td>${notice.resdate }</td>
+						</tr>
+						<tr>
+							<th>조회 수</th>
+							<td>${notice.visited }</td>
+						</tr>
+							
 					</tbody>
 				</table>
 				<hr>
 				<div class="btn-group">
 					<a href="${path0 }/notice/notice_ins.jsp" class="btn btn-secondary">글 등록</a>
+					<a href="${path0 }/EditNotice.do?no=${notice.no }" class="btn btn-secondary">글 수정</a>
+					<a href="${path0 }/DelNotice.do?no=${notice.no }" class="btn btn-secondary">글 삭제</a>
+					<a href="${path0 }/NoticeList.do" class="btn btn-secondary">글 목록</a>
 				</div>
 				<hr>
 			</div>

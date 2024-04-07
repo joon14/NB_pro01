@@ -3,10 +3,11 @@ package org.dapsimni.dao;
 import java.sql.*;
 
 public class MySQLDB implements SqlLang {
-	final static String DRIVER = "org.mysql.jdbc.Driver";
+	final static String DRIVER = "com.mysql.cj.jdbc.Driver";
 	final static String URL = "jdbc:mysql://localhost:3306/jdj";
 	final static String USERID = "root";
 	final static String USERPW = "1234";
+	final static String INSERT_NOTICE = "insert into notice values(default, ?, ?, default, 0)";
 	
 	Connection con = null;
 	
