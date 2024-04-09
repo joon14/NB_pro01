@@ -1,0 +1,11 @@
+package org.dapsimni.dao;
+
+import java.util.*;
+
+import org.dapsimni.dto.Member;
+
+public class MemberDAO {
+	public List<Member> getMemberList() {
+		List<Member> memList = new ArrayList<>();
+	}
+}
