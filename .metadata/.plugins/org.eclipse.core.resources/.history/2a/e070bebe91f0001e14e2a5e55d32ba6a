@@ -1,9 +1,0 @@
-package org.dapsimni.dto;
-
-public class Traffic {
-	private int tno;
-	private String ttype;
-	private String no;
-	private String route;
-	private String comment;
-}

@@ -6,6 +6,7 @@
 <script src="${ipath }/js/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="${ipath }/css/bootstrap.min.css" />
 <script src="${ipath }/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="subject" content="답십리동 소개(Dapsimni Intro)" />
 <meta name="description" content="답십리동, 맛집, 카페, 교육, 의료" />
@@ -17,3 +18,4 @@
 <meta property="og:description" content="답십리동, 맛집, 카페, 교육, 의료" />
 <meta property="og:image" content="${ipath }/images/site.png" />
 <meta property="og:url" content="http://localhost:8091" />
+<link rel="stylesheet" href="${ipath }/css/common.css" />

@@ -132,4 +132,29 @@ public class MemberDAO {
 		}
 		return cnt;
 	}
+
+	public boolean idCheck(String id) {
+		boolean check = false;
+		
+		MySQLDB mysql = new MySQLDB();
+		
+		try {
+			con = mysql.connect();
+			pstmt = con.prepareStatement(SqlLang.SELECT_MEMBER_BYID);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				check = true;
+			}
+			else {
+				check = false;
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			mysql.close(con, pstmt, rs);
+		}
+		return check;
+	}
 }

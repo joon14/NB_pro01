@@ -42,7 +42,7 @@
 						<tr>
 							<th><label for="pw">비밀번호</label></th>
 							<td>
-								<input type="text" name="pw" id="pw" class="form-control" required>
+								<input type="password" name="pw" id="pw" class="form-control" required>
 							</td>
 						</tr>
 					</tbody>
@@ -51,6 +51,7 @@
 				<div class="btn-group">
 					<button type="submit" class="btn btn-secondary">로그인</button>
 					<button type="reset" class="btn btn-secondary">취소</button>
+					<a href="${path0 }/member/join.jsp" class="btn btn-secondary">회원가입</a>
 				</div>
 			</form>
 		</div>

@@ -1,8 +1,0 @@
-package org.dapsimni.dao;
-
-import java.sql.*;
-import java.util.*;
-
-public class NoticeDAO {
-
-}
