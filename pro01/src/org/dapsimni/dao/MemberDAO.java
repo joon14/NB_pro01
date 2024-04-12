@@ -114,7 +114,7 @@ public class MemberDAO {
 		return cnt;
 	}
 	
-	public int MemberOut(Member member) {
+	public int MemberOut(String id) {
 		int cnt = 0;
 		
 		MySQLDB mysql = new MySQLDB();
@@ -122,8 +122,7 @@ public class MemberDAO {
 		try {
 			con = mysql.connect();
 			pstmt = con.prepareStatement(SqlLang.DELETE_MEMBER);
-			pstmt.setString(1, member.getId());
-			pstmt.setString(2, member.getPw());
+			pstmt.setString(1, id);
 			cnt = pstmt.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();

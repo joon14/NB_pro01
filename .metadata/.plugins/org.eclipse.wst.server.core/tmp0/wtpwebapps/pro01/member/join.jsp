@@ -37,7 +37,7 @@
 							<th><label for="id">아이디</label></th>
 							<td>
 								<input type="text" name="id" id="id" class="form-control" required>
-								<button type="button" onclick="idCheck()" class="btn btn-secondary">아이디 중복확인</button>
+								<button type="button" onclick="checkId()" class="btn btn-secondary">아이디 중복확인</button>
 								<input type="hidden" id="idCheck" name="idCheck" value="false">
 								<div id="idMessage"></div>
 							</td>
@@ -97,8 +97,11 @@
 					alert("아이디 중복 확인을 하지 않으셨습니다.");
 					return false;
 				}
+				if(f.pw.value==f.pw2.value && f.idCheck.value!="false") {
+					alert("환영합니다! 회원가입이 완료되었습니다!");
+				}
 			}
-			function idCheck() {
+			function checkId() {
 				if($("#id").val()=="") {
 					alert("아이디를 입력하지 않으셨습니다.");
 					$("#id").focus();
@@ -110,15 +113,16 @@
 				$.ajax({
 					url:"${path0 }/IdCheck.do",
 					type:"post",
+					dataType:"json",
 					data:params,
 					success:function(data) {
 						var checkId = data.result;
 						if(checkId==false) {
-							$("idCheck").val("true");
-							$("#idMessage").html("<strong> 사용 가능한 아이디입니다.</strong>");
+							$("#idCheck").val("true");
+							$("#idMessage").html("<strong style='color:blue'> 사용 가능한 아이디입니다.</strong>");
 						}
 						else {
-							$("idCheck").val("false");
+							$("#idCheck").val("false");
 							$("#idMessage").html("<strong style='color:red'> 중복된 아이디입니다!</strong>");
 						}
 					}

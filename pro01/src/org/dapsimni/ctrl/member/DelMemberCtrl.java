@@ -26,11 +26,10 @@ public class DelMemberCtrl extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		
 		Member member = new Member();
-		member.setId(request.getParameter("id"));
-		member.setPw(request.getParameter("pw"));
+		String id = request.getParameter("id");
 		MemberDAO dao = new MemberDAO();
 		
-		int cnt = dao.MemberOut(member);
+		int cnt = dao.MemberOut(id);
 		
 		HttpSession session = request.getSession();
 		
@@ -39,7 +38,7 @@ public class DelMemberCtrl extends HttpServlet {
 			response.sendRedirect("/pro01");
 		}
 		else {
-			response.sendRedirect("/EditMember.do?id="+member.getId());
+			response.sendRedirect("/EditMember.do?id="+id);
 		}
 	}
 

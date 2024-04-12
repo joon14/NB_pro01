@@ -80,7 +80,7 @@
 				<hr>
 				<div class="btn-group">
 					<button type="submit" class="btn btn-secondary">회원정보수정</button>
-					<a href="${path0 }/DelMember.do?id=${sid }" class="btn btn-secondary">회원탈퇴</a>
+					<a href="${path0 }/DelMember.do?id=${sid }" onclick="outMember()" class="btn btn-secondary">회원탈퇴</a>
 					<button type="reset" class="btn btn-secondary">취소</button>
 				</div>
 			</form>
@@ -91,6 +91,12 @@
 					f.pw.focus();
 					return false;
 				}
+				else {
+					alert("회원정보 수정이 완료되었습니다!");
+				}
+			}
+			function outMember() {
+				alert("회원탈퇴가 완료되었습니다.");
 			}
 			</script>
 		</div>

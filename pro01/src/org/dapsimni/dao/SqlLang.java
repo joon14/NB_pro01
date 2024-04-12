@@ -15,7 +15,7 @@ public interface SqlLang {
 	String SELECT_MEMBER_BYID = "select * from member where id=?";
 	String INSERT_MEMBER = "insert into member values(?,?,?,?,?,?)";
 	String UPDATE_MEMBER = "update member set pw=?, name=?, birth=?, email=?, tel=? where id=?";
-	String DELETE_MEMBER = "delete from member where id=?, pw=?";
+	String DELETE_MEMBER = "delete from member where id=?";
 	
 	Connection connect();
 	void close(Connection con, PreparedStatement pstmt);
