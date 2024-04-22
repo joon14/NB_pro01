@@ -2,16 +2,16 @@
  1. 메인 메뉴
 	지역소개		이용안내		커뮤니티		마이페이지
 	지명유래		교통편 안내	공지사항		로그인
-	연혁 		주요 시설 안내	묻고 답하기	나의 정보
+	연혁 			주요 시설 안내	묻고 답하기	나의 정보
 	오시는 길		먹거리 안내	자료실		회원 약관
 							개인정보처리방침
 							(X)회원가입
  2. 네비게이션 설계(메뉴 설계)
 	지역소개		이용안내		커뮤니티		마이페이지
 	지명유래		교통편 안내	공지사항		로그인
-	(origin.jsp)	(traffic.jsp)	(noticeList.jsp)	(login.jsp)
-	연혁		주요 시설 안내	묻고 답하기	나의 정보
-	(history.jsp)	(facility.jsp)	(qnaList.jsp)	(myPage.jsp)
+	(origin.jsp)		(traffic.jsp)		(noticeList.jsp)	(login.jsp)
+	연혁			주요 시설 안내	묻고 답하기	나의 정보
+	(history.jsp)		(facility.jsp)		(qnaList.jsp)	(myPage.jsp)
 	오시는 길		먹거리 안내	자료실		회원 약관
 	(map.jsp)		(rest.jsp)		(dataList.jsp)	(terms.jsp)
 							개인정보처리방침
@@ -100,7 +100,6 @@
 	연세휴치과의원 동대문점
 - 기관
 	동대문구 답십리도서관
-	답십리 지구대
 	답십리 1동 주민센터
 	답십리 2동 주민센터
 

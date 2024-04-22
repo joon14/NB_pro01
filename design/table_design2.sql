@@ -3,7 +3,7 @@ use jdj;
 
 -- traffic table
 create table traffic(tno int auto_increment primary key, ttype varchar(20) not null, 
-no varchar(10) not null, route varchar(50), comment varchar(2000));
+no varchar(10) not null, route varchar(2000), comment varchar(2000));
 
 alter table traffic modify route varchar(2000);
 

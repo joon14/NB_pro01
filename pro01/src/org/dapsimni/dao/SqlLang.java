@@ -17,6 +17,13 @@ public interface SqlLang {
 	String UPDATE_MEMBER = "update member set pw=?, name=?, birth=?, email=?, tel=? where id=?";
 	String DELETE_MEMBER = "delete from member where id=?";
 	
+	String SELECT_ALL_QNA = "select * from qna order by parno desc, plevel asc";
+	String SELECT_QNA_BYNO = "select * from qna where no=?";
+	String UPDATE_QNA = "update qna set title=?, content=? where no=?";
+	String UPDATE_QNA_VISITED = "update qna set visited=visited+1 where no=?";
+	String DELETE_QUESTION = "delete from qna where parno=?";
+	String DELETE_ANSWER = "delete from qna where no=?";
+	
 	Connection connect();
 	void close(Connection con, PreparedStatement pstmt);
 	void close(Connection con, PreparedStatement pstmt, ResultSet rs);

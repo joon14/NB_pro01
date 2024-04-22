@@ -42,15 +42,25 @@ public class LogInProCtrl extends HttpServlet {
 			session.setAttribute("sname", member.getName());
 			response.sendRedirect("/pro01");
 		}
+		/*
 		else if(id.equals(member.getId())) {
-			request.setAttribute("message", "해당 회원의 비밀번호가 일치하지 않습니다.");
+			request.setAttribute("message1", "해당 회원의 비밀번호가 일치하지 않습니다.");
 			view = request.getRequestDispatcher("/member/login.jsp");
 			view.forward(request, response);
 		}
 		else {
-			request.setAttribute("message", "해당 회원이 존재하지 않습니다.");
+			request.setAttribute("message2", "해당 회원이 존재하지 않습니다.");
 			view = request.getRequestDispatcher("/member/login.jsp");
 			view.forward(request, response);
+		}
+		*/
+		else if(id.equals(member.getId())) {
+			out.println("<script>alert('해당 회원의 비밀번호가 일치하지 않습니다.'); location.href = '/pro01/member/login.jsp';</script>");
+			out.flush();
+		}
+		else {
+			out.println("<script>alert('해당 회원이 존재하지 않습니다.'); location.href = '/pro01/member/login.jsp';</script>");
+			out.flush();
 		}
 	}
 

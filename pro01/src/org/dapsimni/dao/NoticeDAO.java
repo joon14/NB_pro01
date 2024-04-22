@@ -153,4 +153,29 @@ public class NoticeDAO {
 		
 		return notice;
 	}
+
+	public List<Notice> getLatestNoticeList() {
+		List<Notice> latestNoticeList = new ArrayList<>();
+		
+		MySQLDB mysql = new MySQLDB();
+		
+		try {
+			con = mysql.connect();
+			pstmt = con.prepareStatement(MySQLDB.LATEST_NOTICE);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Notice notice = new Notice(rs.getInt("no"),
+						rs.getString("title"),
+						rs.getString("content"),
+						rs.getString("resdate"),
+						rs.getInt("visited"));
+				latestNoticeList.add(notice);
+			}
+		} catch(Exception e){
+			e.printStackTrace();
+		} finally {
+			mysql.close(con, pstmt, rs);
+		}
+		return latestNoticeList;
+	}
 }

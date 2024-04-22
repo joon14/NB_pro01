@@ -1,0 +1,82 @@
+
+4월 13, 2024 01:48:36.43 NEW SESSION
+4월 13, 2024 01:48:36.43 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 13, 2024 12:02:58.81 NEW SESSION
+4월 13, 2024 12:02:58.81 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 13, 2024 12:16:37.80 [14404:14812:0413/121637.805:ERROR:cert_verify_proc_builtin.cc(878)] CertVerifyProcBuiltin for www.mipro.co.kr failed:
+4월 13, 2024 12:16:37.80 ----- Certificate i=0 (O=My Company Ltd,L=Newbury,ST=Berkshire,C=GB) -----
+4월 13, 2024 12:16:37.80 ERROR: No matching issuer found
+4월 13, 2024 12:16:37.80 
+4월 13, 2024 12:16:37.80 
+4월 13, 2024 21:36:29.72 [14404:9568:0413/213629.719:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+
+4월 14, 2024 23:47:33.60 NEW SESSION
+4월 14, 2024 23:47:33.60 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 15, 2024 08:59:16.17 NEW SESSION
+4월 15, 2024 08:59:16.17 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 15, 2024 09:00:27.00 [4052:13248:0415/090027.002:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 15, 2024 12:49:42.41 [4052:4608:0415/124942.417:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 13:55:22.05 [4052:4608:0415/135522.055:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 13:55:22.25 [4052:4608:0415/135522.259:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 15, 2024 13:55:26.39 [4052:4608:0415/135526.391:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+4월 15, 2024 13:55:26.41 [4052:13584:0415/135526.416:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+4월 15, 2024 14:00:59.86 [4052:4608:0415/140059.862:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 14:02:02.48 [4052:4608:0415/140202.481:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 15:00:07.27 [4052:4608:0415/150007.278:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 16:04:18.52 [4052:4608:0415/160418.522:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 16:05:38.37 [4052:4608:0415/160538.370:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 16:33:13.20 [4052:13248:0415/163313.205:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 15, 2024 16:33:25.97 [4052:13248:0415/163325.969:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 15, 2024 16:34:20.14 [4052:13248:0415/163420.147:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 15, 2024 16:40:49.43 [4052:4608:0415/164049.439:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 15, 2024 17:04:03.19 [4052:13248:0415/170403.195:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 15, 2024 17:20:54.96 [4052:4608:0415/172054.963:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+
+4월 16, 2024 08:56:28.49 NEW SESSION
+4월 16, 2024 08:56:28.49 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 16, 2024 09:53:09.75 [4440:10572:0416/095309.756:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 10:49:30.06 [4440:10572:0416/104930.060:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 10:59:09.36 [4440:10572:0416/105909.364:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 12:12:25.83 [4440:10572:0416/121225.835:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 12:16:19.60 [4440:10572:0416/121619.607:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 12:24:00.03 [4440:10572:0416/122400.034:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 12:38:31.72 [4440:7040:0416/123831.719:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 16, 2024 12:38:47.49 [4440:7040:0416/123847.497:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 16, 2024 12:41:40.65 [4440:7040:0416/124140.659:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 16, 2024 12:50:07.64 [4440:10572:0416/125007.646:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 13:37:21.79 [4440:7040:0416/133721.791:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 16, 2024 13:38:43.31 [4440:10572:0416/133843.318:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 13:50:34.71 [4440:10572:0416/135034.718:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 15:06:00.04 [4440:10572:0416/150600.045:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 16:56:27.26 [4440:10572:0416/165627.262:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 16, 2024 18:00:34.14 [4440:10572:0416/180034.144:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+
+4월 16, 2024 21:47:05.53 NEW SESSION
+4월 16, 2024 21:47:05.53 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 17, 2024 24:02:14.65 [9700:13892:0417/000214.653:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+
+4월 18, 2024 08:46:23.20 NEW SESSION
+4월 18, 2024 08:46:23.20 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2024 12:50:32.09 [15768:15548:0418/125032.085:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 18, 2024 14:02:31.71 [15768:15548:0418/140231.718:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 18, 2024 15:54:23.46 [15768:15548:0418/155423.462:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 18, 2024 15:54:27.50 [15768:15548:0418/155427.504:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+4월 18, 2024 16:04:50.50 [15768:15548:0418/160450.509:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 18, 2024 17:10:12.91 [15768:17372:0418/171012.912:ERROR:cert_issuer_source_aia.cc(35)] Error parsing cert retrieved from AIA (as DER):
+4월 18, 2024 17:10:12.91 ERROR: Couldn't read tbsCertificate as SEQUENCE
+4월 18, 2024 17:10:12.91 ERROR: Failed parsing Certificate
+4월 18, 2024 17:10:12.91 
+4월 18, 2024 17:10:12.97 [15768:17372:0418/171012.972:ERROR:cert_verify_proc_builtin.cc(878)] CertVerifyProcBuiltin for 05.hangwahouse.co.kr failed:
+4월 18, 2024 17:10:12.97 ----- Certificate i=0 (CN=api01.naverceo.io) -----
+4월 18, 2024 17:10:12.97 ERROR: Time is after notAfter
+4월 18, 2024 17:10:12.97 
+4월 18, 2024 17:10:12.97 
+4월 18, 2024 17:10:34.91 [15768:17372:0418/171034.914:ERROR:cert_verify_proc_builtin.cc(878)] CertVerifyProcBuiltin for www.kstnews.co.kr failed:
+4월 18, 2024 17:10:34.91 ----- Certificate i=0 (CN=www.iybs.kr,OU=PositiveSSL,OU=Domain Control Validated) -----
+4월 18, 2024 17:10:34.91 ERROR: Time is after notAfter
+4월 18, 2024 17:10:34.91 
+4월 18, 2024 17:10:34.91 
+4월 18, 2024 18:52:55.69 [15768:15548:0418/185255.690:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 18, 2024 19:17:48.44 [15768:15548:0418/191748.445:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
