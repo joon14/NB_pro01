@@ -7,9 +7,12 @@ public class Member {
 	private String birth;
 	private String email;
 	private String tel;
+	private String addr;
+	private String postcode;
 	
 	public Member() {}
-	public Member(String id, String pw, String name, String birth, String email, String tel) {
+	public Member(String id, String pw, String name, String birth, String email, String tel, String addr,
+			String postcode) {
 		super();
 		this.id = id;
 		this.pw = pw;
@@ -17,6 +20,8 @@ public class Member {
 		this.birth = birth;
 		this.email = email;
 		this.tel = tel;
+		this.addr = addr;
+		this.postcode = postcode;
 	}
 	
 	public String getId() {
@@ -55,10 +60,22 @@ public class Member {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	public String getAddr() {
+		return addr;
+	}
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+	public String getPostcode() {
+		return postcode;
+	}
+	public void setPostcode(String postcode) {
+		this.postcode = postcode;
+	}
 	
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", pw=" + pw + ", name=" + name + ", birth=" + birth + ", email=" + email + ", tel="
-				+ tel + "]";
+				+ tel + ", addr=" + addr + ", postcode=" + postcode + "]";
 	}
 }

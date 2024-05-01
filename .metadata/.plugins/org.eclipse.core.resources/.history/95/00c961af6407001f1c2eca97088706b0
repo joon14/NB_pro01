@@ -1,0 +1,5 @@
+package org.dapsimni.util;
+
+public class AES256 {
+
+}

@@ -53,4 +53,11 @@ create table member(id varchar(50) primary key, pw varchar(50) not null,
 name varchar(50) not null, birth date not null, 
 email varchar(100) not null, tel varchar(100) not null);
 
+alter table member add addr varchar(2000) not null;
+alter table member add postcode varchar(500) not null;
+
+select * from member;
+
+commit;
+
 desc member;

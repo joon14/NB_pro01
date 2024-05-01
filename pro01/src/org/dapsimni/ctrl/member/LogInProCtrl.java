@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import org.dapsimni.dao.MemberDAO;
 import org.dapsimni.dto.Member;
+import org.dapsimni.util.AES256;
 
 @WebServlet("/LogInPro.do")
 public class LogInProCtrl extends HttpServlet {
@@ -36,6 +37,14 @@ public class LogInProCtrl extends HttpServlet {
 		HttpSession session = request.getSession();
 		PrintWriter out = response.getWriter();
 		RequestDispatcher view;
+		
+		String key = "%02x";
+		
+		try {
+			member.setPw(AES256.decryptAES256(member.getPw(), key));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		if(id.equals(member.getId()) && pw.equals(member.getPw())) {
 			session.setAttribute("sid", member.getId());

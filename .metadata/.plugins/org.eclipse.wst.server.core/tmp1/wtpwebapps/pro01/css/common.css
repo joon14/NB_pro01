@@ -19,7 +19,7 @@ padding:0; width:100%; z-index:999; }
 #gnb .item:hover a.dp1 { background-color:#004AAD; }
 #gnb .item .sub_menu li { margin:0; padding:0; 
 text-indent:90px; line-height:32px;  width:100%;
-background-color:#659ffc; }
+background-color:#659ffc; display:block; }
 #gnb .item .sub_menu li:hover { background-color:#004AAD; }
 #gnb .item .sub_menu li a { color:#fff; }
 #contents { clear:both; }

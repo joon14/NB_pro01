@@ -13,8 +13,8 @@ public interface SqlLang {
 	
 	String SELECT_ALL_MEMBER = "select * from member order by id";
 	String SELECT_MEMBER_BYID = "select * from member where id=?";
-	String INSERT_MEMBER = "insert into member values(?,?,?,?,?,?)";
-	String UPDATE_MEMBER = "update member set pw=?, name=?, birth=?, email=?, tel=? where id=?";
+	String INSERT_MEMBER = "insert into member values(?,?,?,?,?,?,?,?)";
+	String UPDATE_MEMBER = "update member set pw=?, name=?, birth=?, email=?, tel=?, addr=?, postcode=? where id=?";
 	String DELETE_MEMBER = "delete from member where id=?";
 	
 	String SELECT_ALL_QNA = "select * from qna order by parno desc, plevel asc";

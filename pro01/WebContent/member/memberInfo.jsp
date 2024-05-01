@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
 <c:set var="path0" value="<%=request.getContextPath() %>" />     
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,7 @@
 <%@ include file="/head.jsp" %>
 <style>
 	.container { width:100%; position:absolute }
-	.page { clear:both; height:100vh; }
+	.page { clear:both; height:130vh; }
 	#page1 { background-color:#c9dff2 }
 	#page2 { background-color:#5d97f5 }
 	#page3 { background-color:#f5f295 }
@@ -83,6 +84,19 @@
 								<input type="tel" name="tel" id="tel" class="form-control" value="${member.tel }" required>
 							</td>
 						</tr>
+						<tr>
+							<th><label for="addr">주소</label></th>
+							<td>
+								<div style="display: flex; align-items: center;">
+									<input type="text" name="postcode" id="postcode" placeholder="우편번호 입력" class="form-control" value="${member.postcode }" onclick="findAddr()" style="width:160px">
+									&nbsp;&nbsp;&nbsp;<button type="button" id="post_btn" class="btn btn-info" onclick="findAddr()">우편번호 검색</button>
+								</div>
+								<br>
+								<c:set var="address" value="${fn:split(member.addr, '$')}"/>
+								<input type="text" name="address1" id="address1" placeholder="기본 주소 입력" class="form-control" value="${address[0] }" onclick="findAddr()"><br>
+								<input type="text" name="address2" id="address2" placeholder="상세 주소 입력" class="form-control" value="${address[1] }">
+							</td>
+						</tr>
 					</tbody>
 				</table>
 				<hr>
@@ -92,7 +106,9 @@
 						<button type="reset" class="btn btn-danger" onclick="location.href='/pro01'">취소</button>
 					</div>
 					<div class="button" style="float: right;">
-						<a href="${path0 }/DelMember.do?id=${sid }" onclick="outMember()" class="btn btn-secondary">회원탈퇴</a>
+						<c:if test="${!sid.equals('admin') }">
+							<a href="${path0 }/DelMember.do?id=${sid }" onclick="outMember()" class="btn btn-secondary">회원탈퇴</a>
+						</c:if>
 					</div>
 				</div>
 			</form>
@@ -111,6 +127,25 @@
 				alert("회원탈퇴가 완료되었습니다.");
 			}
 			</script>
+			<script>
+            function findAddr(){
+                new daum.Postcode({
+                    oncomplete:function(data){
+                        console.log(data);
+                        var roadAddr = data.roadAddress;
+                        var jibunAddr = data.jibunAddress;
+                        document.getElementById("postcode").value = data.zonecode;
+                        if(roadAddr !== ''){
+                            document.getElementById("address1").value = roadAddr;
+                        } else if(jibunAddr !== ''){
+                            document.getElementById("address1").value = jibunAddr;
+                        }
+                        document.getElementById("address2").focus();
+                    }
+                }).open();
+            }
+			</script>
+			<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 		</div>
 	</section>
 </div>

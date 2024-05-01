@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.dapsimni.dao.MemberDAO;
 import org.dapsimni.dto.Member;
+import org.dapsimni.util.AES256;
 
 @WebServlet("/EditMember.do")
 public class EditMemberCtrl extends HttpServlet {
@@ -28,6 +29,14 @@ public class EditMemberCtrl extends HttpServlet {
 		String id = request.getParameter("id");
 		MemberDAO dao = new MemberDAO();
 		Member member = dao.getMember(id);
+		
+		String key = "%02x";
+		
+		try {
+			member.setPw(AES256.decryptAES256(member.getPw(), key));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		request.setAttribute("member", member);
 		RequestDispatcher view = request.getRequestDispatcher("/member/memberInfo.jsp");

@@ -28,7 +28,9 @@ public class MemberDAO {
 						rs.getString("name"),
 						rs.getString("birth"),
 						rs.getString("email"),
-						rs.getString("tel")
+						rs.getString("tel"),
+						rs.getString("addr"),
+						rs.getString("postcode")
 						);
 				memberList.add(member);
 			}
@@ -58,6 +60,8 @@ public class MemberDAO {
 				member.setBirth(rs.getString("birth"));
 				member.setEmail(rs.getString("email"));
 				member.setTel(rs.getString("tel"));
+				member.setAddr(rs.getString("addr"));
+				member.setPostcode(rs.getString("postcode"));
 			}
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -82,6 +86,8 @@ public class MemberDAO {
 			pstmt.setString(4, member.getBirth());
 			pstmt.setString(5, member.getEmail());
 			pstmt.setString(6, member.getTel());
+			pstmt.setString(7, member.getAddr());
+			pstmt.setString(8, member.getPostcode());
 			cnt = pstmt.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -104,7 +110,9 @@ public class MemberDAO {
 			pstmt.setString(3, member.getBirth());
 			pstmt.setString(4, member.getEmail());
 			pstmt.setString(5, member.getTel());
-			pstmt.setString(6, member.getId());
+			pstmt.setString(6, member.getAddr());
+			pstmt.setString(7, member.getPostcode());
+			pstmt.setString(8, member.getId());
 			cnt = pstmt.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
